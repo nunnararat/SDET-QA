@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:09:20.373792" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="13 NavigationalKeywords" source="C:\information\SDET-QA\Automation\TestCases\13_NavigationalKeywords.robot">
+<test id="s1-s1-t1" name="Testing | Navigation" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:20.540659" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:09:20.539661" elapsed="2.321962"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:09:22.861623" elapsed="0.122498"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:22.988081" level="INFO">${location} = https://www.google.com/</msg>
+<var>${location}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-02-04T01:09:22.984121" elapsed="0.003960"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${location}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:09:22.988081" elapsed="0.000982"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:22.989063" level="INFO">Opening url 'https://www.bing.com/'</msg>
+<arg>${url2}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:09:22.989063" elapsed="0.461313"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:23.457014" level="INFO">${location} = https://www.bing.com/</msg>
+<var>${location}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-02-04T01:09:23.450376" elapsed="0.006638"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${location}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:09:23.457014" elapsed="0.000000"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2024-02-04T01:09:23.457014" elapsed="0.014962"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:23.478758" level="INFO">${location} = https://www.google.com/</msg>
+<var>${location}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-02-04T01:09:23.471976" elapsed="0.006782"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${location}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:09:23.478758" elapsed="0.000997"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-02-04T01:09:23.479755" elapsed="6.206802"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:09:20.539661" elapsed="9.146896"/>
+</test>
+<status status="PASS" start="2024-02-04T01:09:20.394946" elapsed="9.292609"/>
+</suite>
+<status status="PASS" start="2024-02-04T01:09:20.383111" elapsed="9.304444"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="13 NavigationalKeywords">Suites.13 NavigationalKeywords</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

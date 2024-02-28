@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:09:52.278953" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="18 ScrollingPage" source="C:\information\SDET-QA\Automation\TestCases\18_ScrollingPage.robot">
+<test id="s1-s1-t1" name="Testing | Scrolling" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:52.442525" level="INFO">Opening browser 'chrome' to base url 'https://www.countries-ofthe-world.com/flags-of-the-world.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:09:52.442525" elapsed="2.125411"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:09:54.567936" elapsed="0.121966"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:54.690900" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-02-04T01:09:54.689902" elapsed="0.013115"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:54.704009" level="INFO">Executing JavaScript:
+window.scrollTo(0, -document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, -document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-02-04T01:09:54.703017" elapsed="0.005972"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-04T01:09:54.708989" elapsed="2.128385"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:09:52.441528" elapsed="4.395846"/>
+</test>
+<status status="PASS" start="2024-02-04T01:09:52.301187" elapsed="4.538185"/>
+</suite>
+<status status="PASS" start="2024-02-04T01:09:52.288931" elapsed="4.554225"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="18 ScrollingPage">Suites.18 ScrollingPage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

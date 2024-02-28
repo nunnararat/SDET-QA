@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:09:48.662192" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="17 UserKeywords withResource" source="C:\information\SDET-QA\Automation\TestCases\17_UserKeywords_withResource.robot">
+<test id="s1-s1-t1" name="Testing | User Keywords with Resource" line="14">
+<kw name="launchBrowser" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:48.824120" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<arg>${appurl}</arg>
+<arg>${appbrowser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:09:48.824120" elapsed="2.580610"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:09:51.404730" elapsed="0.116361"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:51.549199" level="INFO">${title} = nopCommerce demo store</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-02-04T01:09:51.522089" elapsed="0.027110"/>
+</kw>
+<return>
+<value>${title}</value>
+<status status="PASS" start="2024-02-04T01:09:51.549199" elapsed="0.000996"/>
+</return>
+<msg time="2024-02-04T01:09:51.550195" level="INFO">${pageTitle} = nopCommerce demo store</msg>
+<var>${pageTitle}</var>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2024-02-04T01:09:48.823611" elapsed="2.726584"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${pageTitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:09:51.550195" elapsed="0.000997"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-04T01:09:51.551192" level="INFO">nopCommerce demo store</msg>
+<arg>${pageTitle}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-04T01:09:51.551192" elapsed="0.000000"/>
+</kw>
+<kw name="loginToApplication" owner="resources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:51.552190" level="INFO">Clicking link '//a[contains(text(),'Log in')]'.</msg>
+<arg>//a[contains(text(),'Log in')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:09:51.552190" elapsed="0.961834"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:52.514024" level="INFO">Typing text 'nunnararut.1999@gmail.com' into text field '//input[@id='Email']'.</msg>
+<arg>//input[@id='Email']</arg>
+<arg>nunnararut.1999@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:09:52.514024" elapsed="0.072113"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:52.587135" level="INFO">Typing text 'Test@123' into text field '//input[@id='Password']'.</msg>
+<arg>//input[@id='Password']</arg>
+<arg>Test@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:09:52.586137" elapsed="0.057018"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:52.643155" level="INFO">Clicking element '//button[contains(text(),'Log in')]'.</msg>
+<arg>//button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:09:52.643155" elapsed="0.317483"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:09:51.552190" elapsed="1.409446"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-04T01:09:52.961636" elapsed="2.103281"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:09:48.822208" elapsed="6.242709"/>
+</test>
+<status status="PASS" start="2024-02-04T01:09:48.683596" elapsed="6.382315"/>
+</suite>
+<status status="PASS" start="2024-02-04T01:09:48.671187" elapsed="6.396622"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="17 UserKeywords withResource">Suites.17 UserKeywords withResource</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

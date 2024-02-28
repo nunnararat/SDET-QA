@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.13 on win32)" generated="2024-02-03T18:56:42.784789" rpa="false" schemaversion="5">
+<suite id="s1" name="Puppeteer" source="C:\information\SDET-QA\Automation\puppeteer">
+<suite id="s1-s1" name="1 Locators" source="C:\information\SDET-QA\Automation\puppeteer\1_locators.robot">
+<test id="s1-s1-t1" name="Demo id locator" line="12">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-02-03T18:56:43.172299" level="INFO">&amp;{options} = { headless=False }</msg>
+<var>&amp;{options}</var>
+<arg>headless=${false}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-02-03T18:56:43.172299" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:43.173303" level="INFO">http://127.0.0.1:7272/basic-html-elements.html</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the specific ``url``.</doc>
+<status status="PASS" start="2024-02-03T18:56:43.173303" elapsed="1.343582"/>
+</kw>
+<kw name="Input Text" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:44.517882" level="INFO">Typing text 'hello' into text field 'id:prop-visible'.</msg>
+<arg>id:prop-visible</arg>
+<arg>hello</arg>
+<doc>Types the given text into text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T18:56:44.516885" elapsed="0.230351"/>
+</kw>
+<kw name="Pause Execution" owner="Dialogs">
+<doc>Pauses execution until user clicks ``Ok`` button.</doc>
+<status status="PASS" start="2024-02-03T18:56:44.748238" elapsed="3.134085"/>
+</kw>
+<status status="PASS" start="2024-02-03T18:56:43.171301" elapsed="4.712021"/>
+</test>
+<test id="s1-s1-t2" name="Demo css locator" line="20">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-02-03T18:56:47.885316" level="INFO">&amp;{options} = { headless=False }</msg>
+<var>&amp;{options}</var>
+<arg>headless=${false}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-02-03T18:56:47.885316" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:47.887312" level="INFO">http://127.0.0.1:7272/basic-html-elements.html</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the specific ``url``.</doc>
+<status status="PASS" start="2024-02-03T18:56:47.886315" elapsed="1.363169"/>
+</kw>
+<kw name="Input Text" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:49.250482" level="INFO">Typing text 'hello' into text field 'css:input[value='Visible']'.</msg>
+<arg>css:input[value='Visible']</arg>
+<arg>hello</arg>
+<doc>Types the given text into text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T18:56:49.249484" elapsed="0.084773"/>
+</kw>
+<kw name="Pause Execution" owner="Dialogs">
+<doc>Pauses execution until user clicks ``Ok`` button.</doc>
+<status status="PASS" start="2024-02-03T18:56:49.334257" elapsed="0.801627"/>
+</kw>
+<status status="PASS" start="2024-02-03T18:56:47.884320" elapsed="2.251564"/>
+</test>
+<test id="s1-s1-t3" name="Demo xpath locator" line="27">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-02-03T18:56:50.137880" level="INFO">&amp;{options} = { headless=False }</msg>
+<var>&amp;{options}</var>
+<arg>headless=${false}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-02-03T18:56:50.136882" elapsed="0.000998"/>
+</kw>
+<kw name="Open Browser" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:50.139875" level="INFO">http://127.0.0.1:7272/basic-html-elements.html</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the specific ``url``.</doc>
+<status status="PASS" start="2024-02-03T18:56:50.137880" elapsed="1.090441"/>
+</kw>
+<kw name="Input Text" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:51.229319" level="INFO">Typing text 'hello' into text field 'xpath://input[@id='prop-visible']'.</msg>
+<arg>xpath://input[@id='prop-visible']</arg>
+<arg>hello</arg>
+<doc>Types the given text into text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T18:56:51.229319" elapsed="0.168548"/>
+</kw>
+<kw name="Pause Execution" owner="Dialogs">
+<doc>Pauses execution until user clicks ``Ok`` button.</doc>
+<status status="PASS" start="2024-02-03T18:56:51.398864" elapsed="0.535275"/>
+</kw>
+<status status="PASS" start="2024-02-03T18:56:50.136882" elapsed="1.798260"/>
+</test>
+<status status="PASS" start="2024-02-03T18:56:42.806731" elapsed="9.130402"/>
+</suite>
+<suite id="s1-s2" name="2 Login Form" source="C:\information\SDET-QA\Automation\puppeteer\2_login_form.robot">
+<test id="s1-s2-t1" name="Demo login with valid username and password" line="12">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-02-03T18:56:51.944115" level="INFO">&amp;{options} = { headless=False }</msg>
+<var>&amp;{options}</var>
+<arg>headless=${false}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-02-03T18:56:51.943117" elapsed="0.000998"/>
+</kw>
+<kw name="Open Browser" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:51.944115" level="INFO">http://127.0.0.1:7272/login-form-example.html</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the specific ``url``.</doc>
+<status status="PASS" start="2024-02-03T18:56:51.944115" elapsed="1.017985"/>
+</kw>
+<kw name="Input Text" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:52.963093" level="INFO">Typing text 'demo@qahive.com' into text field 'xpath://input[@id='exampleInputEmail1']'.</msg>
+<arg>xpath://input[@id='exampleInputEmail1']</arg>
+<arg>demo@qahive.com</arg>
+<doc>Types the given text into text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T18:56:52.963093" elapsed="0.112003"/>
+</kw>
+<kw name="Input Text" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:53.076094" level="INFO">Typing text '123456789' into text field 'xpath://input[@id='exampleInputPassword1']'.</msg>
+<arg>xpath://input[@id='exampleInputPassword1']</arg>
+<arg>123456789</arg>
+<doc>Types the given text into text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T18:56:53.075096" elapsed="0.053856"/>
+</kw>
+<kw name="Click Element" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:53.128952" level="INFO">Clicking element 'xpath://input[@id='exampleCheck1']'.</msg>
+<arg>xpath://input[@id='exampleCheck1']</arg>
+<doc>Clicks element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T18:56:53.128952" elapsed="0.041888"/>
+</kw>
+<kw name="Run Async Keywords" owner="PuppeteerLibrary">
+<arg>wait for new window open</arg>
+<arg>AND</arg>
+<arg>click element</arg>
+<arg>xpath://button[contains(text(),'Submit')]</arg>
+<doc>Executes all the given keywords in a asynchronous and wait until all keyword is completed</doc>
+<status status="PASS" start="2024-02-03T18:56:53.171839" elapsed="0.508639"/>
+</kw>
+<kw name="Switch Window" owner="PuppeteerLibrary">
+<arg>NEW</arg>
+<doc>Switches to tabs matching locator
+locator support options NEW, MAIN and query using name, title and url
+    - NEW: latest opened window
+    - MAIN: main window
+    - title="QAHive": window title. Page title will have have error if new tab have auto redirection
+    - url="https://qahive.com": url support regex Example: url=.*qahive.com</doc>
+<status status="PASS" start="2024-02-03T18:56:53.680478" elapsed="0.002991"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="PuppeteerLibrary">
+<arg>Welcome Page</arg>
+<doc>Waits until ``text`` appears on current page.</doc>
+<status status="PASS" start="2024-02-03T18:56:53.683469" elapsed="0.011968"/>
+</kw>
+<kw name="Pause Execution" owner="Dialogs">
+<doc>Pauses execution until user clicks ``Ok`` button.</doc>
+<status status="PASS" start="2024-02-03T18:56:53.695437" elapsed="0.833250"/>
+</kw>
+<status status="PASS" start="2024-02-03T18:56:51.942119" elapsed="2.587571"/>
+</test>
+<status status="PASS" start="2024-02-03T18:56:51.938132" elapsed="2.593549"/>
+</suite>
+<suite id="s1-s3" name="3 Alert" source="C:\information\SDET-QA\Automation\puppeteer\3_alert.robot">
+<test id="s1-s3-t1" name="Accept alert" line="7">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-02-03T18:56:54.544958" level="INFO">&amp;{options} = { headless=False }</msg>
+<var>&amp;{options}</var>
+<arg>headless=${False}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-02-03T18:56:54.543960" elapsed="0.000998"/>
+</kw>
+<kw name="Open Browser" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:54.544958" level="INFO">http://127.0.0.1:7272/basic-html-elements.html</msg>
+<arg>http://127.0.0.1:7272/basic-html-elements.html</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the specific ``url``.</doc>
+<status status="PASS" start="2024-02-03T18:56:54.544958" elapsed="1.168711"/>
+</kw>
+<kw name="Run Async Keywords" owner="PuppeteerLibrary">
+<arg>Handle Alert</arg>
+<arg>ACCEPT</arg>
+<arg>AND</arg>
+<arg>Click Button</arg>
+<arg>id=alert_confirm</arg>
+<doc>Executes all the given keywords in a asynchronous and wait until all keyword is completed</doc>
+<status status="PASS" start="2024-02-03T18:56:55.713669" elapsed="0.153589"/>
+</kw>
+<kw name="Click Element" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:55.868255" level="INFO">Clicking element 'id:get_ajax'.</msg>
+<arg>id:get_ajax</arg>
+<doc>Clicks element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T18:56:55.868255" elapsed="0.054854"/>
+</kw>
+<kw name="Close All Browser" owner="PuppeteerLibrary" type="TEARDOWN">
+<doc>Close all browser</doc>
+<status status="PASS" start="2024-02-03T18:56:55.924107" elapsed="0.222801"/>
+</kw>
+<status status="PASS" start="2024-02-03T18:56:54.542974" elapsed="1.604931"/>
+</test>
+<test id="s1-s3-t2" name="Dismiss alert" line="15">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-02-03T18:56:56.148902" level="INFO">&amp;{options} = { headless=False }</msg>
+<var>&amp;{options}</var>
+<arg>headless=${False}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-02-03T18:56:56.148902" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:56.150385" level="INFO">http://127.0.0.1:7272/basic-html-elements.html</msg>
+<arg>http://127.0.0.1:7272/basic-html-elements.html</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the specific ``url``.</doc>
+<status status="PASS" start="2024-02-03T18:56:56.148902" elapsed="1.049839"/>
+</kw>
+<kw name="Run Async Keywords" owner="PuppeteerLibrary">
+<arg>Handle Alert</arg>
+<arg>DISMISS</arg>
+<arg>AND</arg>
+<arg>Click Button</arg>
+<arg>id=alert_confirm</arg>
+<doc>Executes all the given keywords in a asynchronous and wait until all keyword is completed</doc>
+<status status="PASS" start="2024-02-03T18:56:57.198741" elapsed="0.115692"/>
+</kw>
+<kw name="Click Element" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:57.315429" level="INFO">Clicking element 'id:get_ajax'.</msg>
+<arg>id:get_ajax</arg>
+<doc>Clicks element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T18:56:57.315429" elapsed="0.043883"/>
+</kw>
+<kw name="Close All Browser" owner="PuppeteerLibrary" type="TEARDOWN">
+<doc>Close all browser</doc>
+<status status="PASS" start="2024-02-03T18:56:57.359312" elapsed="0.210822"/>
+</kw>
+<status status="PASS" start="2024-02-03T18:56:56.148902" elapsed="1.421232"/>
+</test>
+<kw name="Close Puppeteer" owner="PuppeteerLibrary" type="TEARDOWN">
+<status status="PASS" start="2024-02-03T18:56:57.571131" elapsed="0.388760"/>
+</kw>
+<status status="PASS" start="2024-02-03T18:56:54.534676" elapsed="3.425215"/>
+</suite>
+<suite id="s1-s4" name="4 Async Await" source="C:\information\SDET-QA\Automation\puppeteer\4_async_await.robot">
+<test id="s1-s4-t1" name="Submit login form" line="5">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-02-03T18:56:57.963880" level="INFO">&amp;{options} = { headless=False }</msg>
+<var>&amp;{options}</var>
+<arg>headless=${False}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-02-03T18:56:57.963880" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:57.963880" level="INFO">http://127.0.0.1:7272/login-form-example.html</msg>
+<arg>http://127.0.0.1:7272/login-form-example.html</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the specific ``url``.</doc>
+<status status="PASS" start="2024-02-03T18:56:57.963880" elapsed="1.165434"/>
+</kw>
+<kw name="Input Text" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:59.131305" level="INFO">Typing text 'demo@qahive.com' into text field 'id=exampleInputEmail1'.</msg>
+<arg>id=exampleInputEmail1</arg>
+<arg>demo@qahive.com</arg>
+<doc>Types the given text into text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T18:56:59.130311" elapsed="0.135637"/>
+</kw>
+<kw name="Input Text" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:59.266943" level="INFO">Typing text '123456789' into text field 'id=exampleInputPassword1'.</msg>
+<arg>id=exampleInputPassword1</arg>
+<arg>123456789</arg>
+<doc>Types the given text into text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T18:56:59.266943" elapsed="0.077792"/>
+</kw>
+<kw name="Click Element" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:56:59.345733" level="INFO">Clicking element 'id=exampleCheck1'.</msg>
+<arg>id=exampleCheck1</arg>
+<doc>Clicks element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T18:56:59.345733" elapsed="0.048176"/>
+</kw>
+<kw name="Run Async Keywords" owner="PuppeteerLibrary">
+<arg>Wait For New Window Open</arg>
+<arg>AND</arg>
+<arg>Click Element</arg>
+<arg>css=button[type="submit"]</arg>
+<doc>Executes all the given keywords in a asynchronous and wait until all keyword is completed</doc>
+<status status="PASS" start="2024-02-03T18:56:59.394905" elapsed="0.509363"/>
+</kw>
+<kw name="Switch Window" owner="PuppeteerLibrary">
+<arg>NEW</arg>
+<doc>Switches to tabs matching locator
+locator support options NEW, MAIN and query using name, title and url
+    - NEW: latest opened window
+    - MAIN: main window
+    - title="QAHive": window title. Page title will have have error if new tab have auto redirection
+    - url="https://qahive.com": url support regex Example: url=.*qahive.com</doc>
+<status status="PASS" start="2024-02-03T18:56:59.905270" elapsed="0.002638"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="PuppeteerLibrary">
+<arg>Login succeeded</arg>
+<doc>Waits until ``text`` appears on current page.</doc>
+<status status="PASS" start="2024-02-03T18:56:59.908465" elapsed="0.011972"/>
+</kw>
+<kw name="Close Browser" owner="PuppeteerLibrary">
+<doc>Closes the current browser</doc>
+<status status="PASS" start="2024-02-03T18:56:59.920437" elapsed="0.173302"/>
+</kw>
+<status status="PASS" start="2024-02-03T18:56:57.962883" elapsed="2.131853"/>
+</test>
+<status status="PASS" start="2024-02-03T18:56:57.960888" elapsed="2.133848"/>
+</suite>
+<suite id="s1-s5" name="5 Browser Management" source="C:\information\SDET-QA\Automation\puppeteer\5_browser_management.robot">
+<test id="s1-s5-t1" name="Switch to new browser" line="6">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-02-03T18:57:00.098727" level="INFO">&amp;{options} = { headless=False }</msg>
+<var>&amp;{options}</var>
+<arg>headless=${False}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-02-03T18:57:00.098727" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:57:00.099723" level="INFO">http://127.0.0.1:7272/basic-html-elements.html</msg>
+<arg>http://127.0.0.1:7272/basic-html-elements.html</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the specific ``url``.</doc>
+<status status="PASS" start="2024-02-03T18:57:00.099723" elapsed="0.985467"/>
+</kw>
+<kw name="Run Async Keywords" owner="PuppeteerLibrary">
+<arg>Wait For New Window Open</arg>
+<arg>AND</arg>
+<arg>Click Element</arg>
+<arg>id=open-new-tab</arg>
+<doc>Executes all the given keywords in a asynchronous and wait until all keyword is completed</doc>
+<status status="PASS" start="2024-02-03T18:57:01.086189" elapsed="0.511318"/>
+</kw>
+<kw name="Switch Window" owner="PuppeteerLibrary">
+<arg>NEW</arg>
+<doc>Switches to tabs matching locator
+locator support options NEW, MAIN and query using name, title and url
+    - NEW: latest opened window
+    - MAIN: main window
+    - title="QAHive": window title. Page title will have have error if new tab have auto redirection
+    - url="https://qahive.com": url support regex Example: url=.*qahive.com</doc>
+<status status="PASS" start="2024-02-03T18:57:01.598482" elapsed="0.001992"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="PuppeteerLibrary">
+<arg>id=exampleInputEmail1</arg>
+<doc>Waits until ``locator`` element appears on current page.</doc>
+<status status="PASS" start="2024-02-03T18:57:01.601471" elapsed="0.017953"/>
+</kw>
+<kw name="Switch Window" owner="PuppeteerLibrary">
+<arg>title=Basic HTML Elements</arg>
+<doc>Switches to tabs matching locator
+locator support options NEW, MAIN and query using name, title and url
+    - NEW: latest opened window
+    - MAIN: main window
+    - title="QAHive": window title. Page title will have have error if new tab have auto redirection
+    - url="https://qahive.com": url support regex Example: url=.*qahive.com</doc>
+<status status="PASS" start="2024-02-03T18:57:01.620421" elapsed="0.010064"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="PuppeteerLibrary">
+<arg>id=open-new-tab</arg>
+<doc>Waits until ``locator`` element appears on current page.</doc>
+<status status="PASS" start="2024-02-03T18:57:01.630485" elapsed="0.011969"/>
+</kw>
+<kw name="Close All Browser" owner="PuppeteerLibrary">
+<doc>Close all browser</doc>
+<status status="PASS" start="2024-02-03T18:57:01.643450" elapsed="0.171779"/>
+</kw>
+<status status="PASS" start="2024-02-03T18:57:00.097728" elapsed="1.717501"/>
+</test>
+<kw name="Close Puppeteer" owner="PuppeteerLibrary" type="TEARDOWN">
+<status status="PASS" start="2024-02-03T18:57:01.816224" elapsed="0.010974"/>
+</kw>
+<status status="PASS" start="2024-02-03T18:57:00.095733" elapsed="1.731465"/>
+</suite>
+<suite id="s1-s6" name="6 Debug Mode" source="C:\information\SDET-QA\Automation\puppeteer\6_debug_mode.robot">
+<test id="s1-s6-t1" name="Enable debug mode" line="8">
+<kw name="Enable Debug Mode" owner="PuppeteerLibrary">
+<doc>Enable debug mode.</doc>
+<status status="PASS" start="2024-02-03T18:57:01.831185" elapsed="0.000000"/>
+</kw>
+<kw name="Open browser to test page">
+<kw name="Get Variable Value" owner="BuiltIn">
+<msg time="2024-02-03T18:57:01.835177" level="INFO">${HEADLESS} = False</msg>
+<var>${HEADLESS}</var>
+<arg>${HEADLESS}</arg>
+<arg>${False}</arg>
+<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
+<status status="PASS" start="2024-02-03T18:57:01.834177" elapsed="0.001000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-02-03T18:57:01.836171" level="INFO">&amp;{options} = { headless=False }</msg>
+<var>&amp;{options}</var>
+<arg>headless=${HEADLESS}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-02-03T18:57:01.836171" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:57:01.836171" level="INFO">http://127.0.0.1:7272/login-form-example.html</msg>
+<arg>${url}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the specific ``url``.</doc>
+<status status="PASS" start="2024-02-03T18:57:01.836171" elapsed="1.187612"/>
+</kw>
+<arg>http://127.0.0.1:7272/login-form-example.html</arg>
+<status status="PASS" start="2024-02-03T18:57:01.831185" elapsed="1.192598"/>
+</kw>
+<kw name="Input Text" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:57:03.024782" level="INFO">Typing text 'demo@qahive.com' into text field 'id=exampleInputEmail1'.</msg>
+<arg>id=exampleInputEmail1</arg>
+<arg>demo@qahive.com</arg>
+<doc>Types the given text into text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T18:57:03.024782" elapsed="0.141637"/>
+</kw>
+<kw name="Input Text" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:57:03.168397" level="INFO">Typing text '123456789' into text field 'id=exampleInputPassword1'.</msg>
+<arg>id=exampleInputPassword1</arg>
+<arg>123456789</arg>
+<doc>Types the given text into text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T18:57:03.168397" elapsed="0.078789"/>
+</kw>
+<kw name="Close All Browser" owner="PuppeteerLibrary" type="TEARDOWN">
+<doc>Close all browser</doc>
+<status status="PASS" start="2024-02-03T18:57:03.247186" elapsed="0.193482"/>
+</kw>
+<status status="PASS" start="2024-02-03T18:57:01.830187" elapsed="1.610481"/>
+</test>
+<kw name="Close Puppeteer" owner="PuppeteerLibrary" type="TEARDOWN">
+<status status="PASS" start="2024-02-03T18:57:03.441665" elapsed="0.010972"/>
+</kw>
+<status status="PASS" start="2024-02-03T18:57:01.828193" elapsed="1.624444"/>
+</suite>
+<suite id="s1-s7" name="7 Element Property" source="C:\information\SDET-QA\Automation\puppeteer\7_element_property.robot">
+<test id="s1-s7-t1" name="Element proprty is enable" line="8">
+<kw name="Element Should Be Enabled" owner="PuppeteerLibrary">
+<kw name="Capture Page Screenshot" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:57:03.456626" level="FAIL">AttributeError: 'NoneType' object has no attribute 'get_screenshot_path'</msg>
+<doc>Capture current web page as image png file.</doc>
+<status status="FAIL" start="2024-02-03T18:57:03.456626" elapsed="0.000997">AttributeError: 'NoneType' object has no attribute 'get_screenshot_path'</status>
+</kw>
+<msg time="2024-02-03T18:57:03.457623" level="FAIL">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</msg>
+<arg>id:prop-enable</arg>
+<doc>Verifies that element identified by locator is enabled.</doc>
+<status status="FAIL" start="2024-02-03T18:57:03.455628" elapsed="0.001995">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</status>
+</kw>
+<kw name="Close All Browser" owner="PuppeteerLibrary" type="TEARDOWN">
+<doc>Close all browser</doc>
+<status status="PASS" start="2024-02-03T18:57:03.458621" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-03T18:57:03.455628" elapsed="0.002993">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</status>
+</test>
+<test id="s1-s7-t2" name="Element property is disable" line="11">
+<kw name="Element Should Be Disabled" owner="PuppeteerLibrary">
+<kw name="Capture Page Screenshot" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:57:03.460616" level="FAIL">AttributeError: 'NoneType' object has no attribute 'get_screenshot_path'</msg>
+<doc>Capture current web page as image png file.</doc>
+<status status="FAIL" start="2024-02-03T18:57:03.460616" elapsed="0.000996">AttributeError: 'NoneType' object has no attribute 'get_screenshot_path'</status>
+</kw>
+<msg time="2024-02-03T18:57:03.461612" level="FAIL">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</msg>
+<arg>id:prop-disable</arg>
+<doc>Verifies that element identified by locator is disabled.</doc>
+<status status="FAIL" start="2024-02-03T18:57:03.460616" elapsed="0.000996">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</status>
+</kw>
+<kw name="Run Keyword And Expect Error" owner="BuiltIn">
+<arg>REGEXP:Element 'id:prop-enable' is enabled</arg>
+<arg>Element Should Be Disabled</arg>
+<arg>id:prop-enable</arg>
+<doc>Runs the keyword and checks that the expected error occurred.</doc>
+<status status="NOT RUN" start="2024-02-03T18:57:03.462610" elapsed="0.000000"/>
+</kw>
+<kw name="Close All Browser" owner="PuppeteerLibrary" type="TEARDOWN">
+<doc>Close all browser</doc>
+<status status="PASS" start="2024-02-03T18:57:03.462610" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-03T18:57:03.460616" elapsed="0.001994">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</status>
+</test>
+<test id="s1-s7-t3" name="Element is visible and not visible" line="17">
+<kw name="Element Should Be Visible" owner="PuppeteerLibrary">
+<kw name="Capture Page Screenshot" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:57:03.464605" level="FAIL">AttributeError: 'NoneType' object has no attribute 'get_screenshot_path'</msg>
+<doc>Capture current web page as image png file.</doc>
+<status status="FAIL" start="2024-02-03T18:57:03.464605" elapsed="0.000997">AttributeError: 'NoneType' object has no attribute 'get_screenshot_path'</status>
+</kw>
+<msg time="2024-02-03T18:57:03.465602" level="FAIL">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</msg>
+<arg>id:prop-visible</arg>
+<doc>Verifies that element identified by locator is visible.</doc>
+<status status="FAIL" start="2024-02-03T18:57:03.463608" elapsed="0.001994">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</status>
+</kw>
+<kw name="Element Should Not Be Visible" owner="PuppeteerLibrary">
+<arg>id:prop-hide</arg>
+<doc>Verifies that element identified by locator is not be visible.</doc>
+<status status="NOT RUN" start="2024-02-03T18:57:03.466600" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Expect Error" owner="BuiltIn">
+<arg>REGEXP:Element 'id:prop-hide' is not be visible</arg>
+<arg>Element Should Be Visible</arg>
+<arg>id:prop-hide</arg>
+<doc>Runs the keyword and checks that the expected error occurred.</doc>
+<status status="NOT RUN" start="2024-02-03T18:57:03.466600" elapsed="0.000000"/>
+</kw>
+<kw name="Close All Browser" owner="PuppeteerLibrary" type="TEARDOWN">
+<doc>Close all browser</doc>
+<status status="PASS" start="2024-02-03T18:57:03.466600" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-03T18:57:03.463608" elapsed="0.003989">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</status>
+</test>
+<test id="s1-s7-t4" name="Element should containt text" line="25">
+<kw name="Element Should Contain" owner="PuppeteerLibrary">
+<kw name="Capture Page Screenshot" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:57:03.468594" level="FAIL">AttributeError: 'NoneType' object has no attribute 'get_screenshot_path'</msg>
+<doc>Capture current web page as image png file.</doc>
+<status status="FAIL" start="2024-02-03T18:57:03.468594" elapsed="0.000000">AttributeError: 'NoneType' object has no attribute 'get_screenshot_path'</status>
+</kw>
+<msg time="2024-02-03T18:57:03.469591" level="FAIL">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</msg>
+<arg>id=prop-text</arg>
+<arg>Please</arg>
+<arg>${True}</arg>
+<doc>Verifies that element locator contains text `expected`.</doc>
+<status status="FAIL" start="2024-02-03T18:57:03.468594" elapsed="0.000997">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</status>
+</kw>
+<kw name="Close All Browser" owner="PuppeteerLibrary" type="TEARDOWN">
+<doc>Close all browser</doc>
+<status status="PASS" start="2024-02-03T18:57:03.469591" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-03T18:57:03.467597" elapsed="0.001994">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</status>
+</test>
+<test id="s1-s7-t5" name="Element should not contain text" line="28">
+<kw name="Element Should Not Contain" owner="PuppeteerLibrary">
+<kw name="Capture Page Screenshot" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:57:03.471585" level="FAIL">AttributeError: 'NoneType' object has no attribute 'get_screenshot_path'</msg>
+<doc>Capture current web page as image png file.</doc>
+<status status="FAIL" start="2024-02-03T18:57:03.470588" elapsed="0.000997">AttributeError: 'NoneType' object has no attribute 'get_screenshot_path'</status>
+</kw>
+<msg time="2024-02-03T18:57:03.472588" level="FAIL">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</msg>
+<arg>id=prop-text</arg>
+<arg>Please input2</arg>
+<arg>${True}</arg>
+<doc>Verifies that element locator should not contains text `expected`.</doc>
+<status status="FAIL" start="2024-02-03T18:57:03.470588" elapsed="0.002000">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</status>
+</kw>
+<kw name="Close All Browser" owner="PuppeteerLibrary" type="TEARDOWN">
+<doc>Close all browser</doc>
+<status status="PASS" start="2024-02-03T18:57:03.473583" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-03T18:57:03.470588" elapsed="0.002995">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</status>
+</test>
+<test id="s1-s7-t6" name="Element text should be" line="31">
+<kw name="Element Text Should Be" owner="PuppeteerLibrary">
+<kw name="Capture Page Screenshot" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:57:03.475575" level="FAIL">AttributeError: 'NoneType' object has no attribute 'get_screenshot_path'</msg>
+<doc>Capture current web page as image png file.</doc>
+<status status="FAIL" start="2024-02-03T18:57:03.475575" elapsed="0.000000">AttributeError: 'NoneType' object has no attribute 'get_screenshot_path'</status>
+</kw>
+<msg time="2024-02-03T18:57:03.475575" level="FAIL">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</msg>
+<arg>id=prop-text</arg>
+<arg>Please input</arg>
+<arg>${True}</arg>
+<doc>Verifies that element locator contains exact the text `expected`.</doc>
+<status status="FAIL" start="2024-02-03T18:57:03.474577" elapsed="0.001995">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</status>
+</kw>
+<kw name="Close All Browser" owner="PuppeteerLibrary" type="TEARDOWN">
+<doc>Close all browser</doc>
+<status status="PASS" start="2024-02-03T18:57:03.476572" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-03T18:57:03.474577" elapsed="0.002992">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</status>
+</test>
+<test id="s1-s7-t7" name="Element text should not be" line="34">
+<kw name="Element Text Should Not Be" owner="PuppeteerLibrary">
+<kw name="Capture Page Screenshot" owner="PuppeteerLibrary">
+<msg time="2024-02-03T18:57:03.480562" level="FAIL">AttributeError: 'NoneType' object has no attribute 'get_screenshot_path'</msg>
+<doc>Capture current web page as image png file.</doc>
+<status status="FAIL" start="2024-02-03T18:57:03.479564" elapsed="0.000998">AttributeError: 'NoneType' object has no attribute 'get_screenshot_path'</status>
+</kw>
+<msg time="2024-02-03T18:57:03.480562" level="FAIL">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</msg>
+<arg>id=prop-text</arg>
+<arg>Please</arg>
+<arg>${True}</arg>
+<doc>Verifies that element locator not contains exact the text `expected`.</doc>
+<status status="FAIL" start="2024-02-03T18:57:03.478567" elapsed="0.002992">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</status>
+</kw>
+<kw name="Close All Browser" owner="PuppeteerLibrary" type="TEARDOWN">
+<doc>Close all browser</doc>
+<status status="PASS" start="2024-02-03T18:57:03.481559" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-03T18:57:03.477569" elapsed="0.003990">AttributeError: 'NoneType' object has no attribute 'get_async_keyword_group'</status>
+</test>
+<kw name="Close Puppeteer" owner="PuppeteerLibrary" type="TEARDOWN">
+<status status="PASS" start="2024-02-03T18:57:03.482557" elapsed="0.000997"/>
+</kw>
+<status status="FAIL" start="2024-02-03T18:57:03.453634" elapsed="0.029920"/>
+</suite>
+<status status="FAIL" start="2024-02-03T18:56:42.786784" elapsed="20.697767"/>
+</suite>
+<statistics>
+<total>
+<stat pass="9" fail="7" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="9" fail="7" skip="0" id="s1" name="Puppeteer">Puppeteer</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="1 Locators">Puppeteer.1 Locators</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="2 Login Form">Puppeteer.2 Login Form</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s3" name="3 Alert">Puppeteer.3 Alert</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="4 Async Await">Puppeteer.4 Async Await</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s5" name="5 Browser Management">Puppeteer.5 Browser Management</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s6" name="6 Debug Mode">Puppeteer.6 Debug Mode</stat>
+<stat pass="0" fail="7" skip="0" id="s1-s7" name="7 Element Property">Puppeteer.7 Element Property</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

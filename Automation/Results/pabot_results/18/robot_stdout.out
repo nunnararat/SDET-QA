@@ -1,0 +1,28 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.27 Tagging                                                             
+==============================================================================
+TC1 User Registration Test                                            This is user reg test
+user regostration test is over
+| PASS |
+------------------------------------------------------------------------------
+TC2 Login Test                                                        This is login test
+login test is over
+| PASS |
+------------------------------------------------------------------------------
+TC3 Change user settings                                              This is changin user settings test
+Change user settings test is over
+| PASS |
+------------------------------------------------------------------------------
+TC4 Logout Test                                                       This is logout test
+logout test is over
+| PASS |
+------------------------------------------------------------------------------
+Suites.27 Tagging                                                     | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Output:  C:\information\SDET-QA\Automation\Results\pabot_results\18\output.xml

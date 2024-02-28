@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:10:11.594096" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="21 TableDemo" source="C:\information\SDET-QA\Automation\TestCases\21_TableDemo.robot">
+<test id="s1-s1-t1" name="Testing | Table Validations" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:11.794544" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:10:11.793935" elapsed="6.333847"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:10:18.127782" elapsed="0.118308"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:18.257874" level="INFO">${rows} = 7</msg>
+<var>${rows}</var>
+<arg>//table[@name='BookTable']/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:18.246090" elapsed="0.011784"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:18.270843" level="INFO">${columns} = 4</msg>
+<var>${columns}</var>
+<arg>//table[@name='BookTable']/tbody/tr[1]/th</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:18.257874" elapsed="0.012969"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${rows}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:18.271836" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${columns}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:18.271836" elapsed="0.000998"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:18.309503" level="INFO">${data} = Master In Selenium</msg>
+<var>${data}</var>
+<arg>//table[@name='BookTable']/tbody/tr[5]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:18.272834" elapsed="0.036669"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${data}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:18.310523" elapsed="0.001409"/>
+</kw>
+<kw name="Table Column Should Contain" owner="SeleniumLibrary">
+<arg>//table[@name='BookTable']</arg>
+<arg>2</arg>
+<arg>Author</arg>
+<doc>Verifies table column contains text ``expected``.</doc>
+<status status="PASS" start="2024-02-04T01:10:18.312914" elapsed="0.041161"/>
+</kw>
+<kw name="Table Row Should Contain" owner="SeleniumLibrary">
+<arg>//table[@name='BookTable']</arg>
+<arg>4</arg>
+<arg>Learn JS</arg>
+<doc>Verifies that table row contains text ``expected``.</doc>
+<status status="PASS" start="2024-02-04T01:10:18.354075" elapsed="0.044862"/>
+</kw>
+<kw name="Table Cell Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:18.454326" level="INFO">Table cell contains 'Mukesh'.</msg>
+<arg>//table[@name='BookTable']</arg>
+<arg>5</arg>
+<arg>2</arg>
+<arg>Mukesh</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<status status="PASS" start="2024-02-04T01:10:18.398937" elapsed="0.055389"/>
+</kw>
+<kw name="Table Header Should Contain" owner="SeleniumLibrary">
+<arg>//table[@name='BookTable']</arg>
+<arg>BookName</arg>
+<doc>Verifies table header contains text ``expected``.</doc>
+<status status="PASS" start="2024-02-04T01:10:18.454326" elapsed="0.030576"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-04T01:10:18.484902" elapsed="2.168867"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:11.791551" elapsed="8.862218"/>
+</test>
+<status status="PASS" start="2024-02-04T01:10:11.619229" elapsed="9.034540"/>
+</suite>
+<status status="PASS" start="2024-02-04T01:10:11.605394" elapsed="9.051363"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="21 TableDemo">Suites.21 TableDemo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

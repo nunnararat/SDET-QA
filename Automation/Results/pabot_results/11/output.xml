@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:10:00.428683" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="2 Inputbox" source="C:\information\SDET-QA\Automation\TestCases\2_Inputbox.robot">
+<test id="s1-s1-t1" name="Testing | Input Box" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:00.606274" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:10:00.606274" elapsed="2.101583"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:10:02.707857" elapsed="0.141664"/>
+</kw>
+<kw name="loginToApplication">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:02.851515" level="INFO">Clicking link '//a[contains(text(),'Log in')]'.</msg>
+<arg>//a[contains(text(),'Log in')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:02.851515" elapsed="1.026755"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:03.879266" level="INFO">Typing text 'nunnararut.1999@gmail.com' into text field '//input[@id='Email']'.</msg>
+<arg>//input[@id='Email']</arg>
+<arg>nunnararut.1999@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:03.878270" elapsed="0.095172"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:03.974434" level="INFO">Typing text 'Test@123' into text field '//input[@id='Password']'.</msg>
+<arg>//input[@id='Password']</arg>
+<arg>Test@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:03.974434" elapsed="0.087128"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.063562" level="INFO">Clicking element '//button[contains(text(),'Log in')]'.</msg>
+<arg>//button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.061562" elapsed="0.348737"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:02.850515" elapsed="1.559784"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.411296" elapsed="2.166155"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:00.605276" elapsed="5.972175"/>
+</test>
+<test id="s1-s1-t2" name="Testing | Handle Input Box" line="17">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:06.580455" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:10:06.579777" elapsed="2.555649"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:10:09.135426" elapsed="0.123113"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:09.282738" level="INFO">Page title is 'nopCommerce demo store'.</msg>
+<arg>nopCommerce demo store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-02-04T01:10:09.259541" elapsed="0.023197"/>
+</kw>
+<kw name="Handle Inpuut Box">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:09.283726" level="INFO">Clicking link '//a[contains(text(),'Log in')]'.</msg>
+<arg>//a[contains(text(),'Log in')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:09.283726" elapsed="0.900345"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-04T01:10:10.184964" level="INFO">${email_txt} = //input[@id='Email']</msg>
+<var>${email_txt}</var>
+<arg>//input[@id='Email']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-04T01:10:10.184071" elapsed="0.000893"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:10.264468" level="INFO">Element '//input[@id='Email']' is displayed.</msg>
+<arg>${email_txt}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-04T01:10:10.184964" elapsed="0.079504"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:10.264468" level="INFO">Typing text 'nunnararut.1999@gmail.com' into text field '//input[@id='Email']'.</msg>
+<arg>//input[@id='Email']</arg>
+<arg>nunnararut.1999@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:10.264468" elapsed="0.060045"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-04T01:10:13.324834" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-04T01:10:10.324513" elapsed="3.000321"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${email_txt}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:13.324834" elapsed="0.032145"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-04T01:10:16.358137" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-04T01:10:13.356979" elapsed="3.001158"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:09.282738" elapsed="7.075399"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-04T01:10:16.358137" elapsed="2.119785"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:06.578445" elapsed="11.899477"/>
+</test>
+<status status="PASS" start="2024-02-04T01:10:00.454298" elapsed="18.024619"/>
+</suite>
+<status status="PASS" start="2024-02-04T01:10:00.441648" elapsed="18.037269"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="2 Inputbox">Suites.2 Inputbox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

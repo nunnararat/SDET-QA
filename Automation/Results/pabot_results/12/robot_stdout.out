@@ -1,0 +1,51 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.20 GetAllLinks                                                         
+==============================================================================
+Testing | Get All Link                                                36
+1 : 
+2 : 7 Continents
+3 : World Capitals
+4 : World Currencies
+5 : Time Zones
+6 : Calling Codes
+7 : Country Domains
+8 : Best Travel Places
+9 : EUROPE
+10 : ASIA
+11 : AFRICA
+12 : NORTH AMERICA
+13 : SOUTH AMERICA
+14 : AUSTRALIA AND OCEANIA
+15 : Top 100 largest countries by area
+16 : Top 100 smallest countries by area
+17 : HOW MANY COUNTRIES?
+18 : COUNTRIES OF THE WORLD
+19 : COUNTRIES OF EUROPE
+20 : COUNTRIES OF ASIA
+21 : COUNTRIES OF AFRICA
+22 : COUNTRIES OF NORTH AMERICA
+23 : COUNTRIES OF SOUTH AMERICA
+24 : COUNTRIES OF AUSTRALIA AND OCEANIA
+25 : EUROPEAN UNION COUNTRIES
+26 : WORLD'S LARGEST COUNTRIES
+27 : WORLD'S SMALLEST COUNTRIES
+28 : MOST POPULOUS COUNTRIES
+29 : WORLD'S RICHEST COUNTRIES
+30 : MOST TRADED CURRENCIES
+31 : WORLD'S TOP UNIVERSITIES
+32 : BEST US ONLINE COLLEGES
+33 : FREE ONLINE COURSES
+34 : Privacy and Disclaimer
+35 : Cookies Policy
+36 : Contact us
+| PASS |
+------------------------------------------------------------------------------
+Suites.20 GetAllLinks                                                 | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\information\SDET-QA\Automation\Results\pabot_results\12\output.xml

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:11:05.855221" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="6 TimeoutTests" source="C:\information\SDET-QA\Automation\TestCases\6_TimeoutTests.robot">
+<test id="s1-s1-t1" name="Testing | selenium timeout" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:06.033649" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/register'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:11:06.033649" elapsed="3.630777"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:11:09.664426" elapsed="0.114423"/>
+</kw>
+<kw name="Get Selenium Timeout" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:09.779841" level="INFO">${time} = 5 seconds</msg>
+<var>${time}</var>
+<doc>Gets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-02-04T01:11:09.778849" elapsed="0.000992"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${time}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:11:09.779841" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-02-04T01:11:09.780865" elapsed="0.001034"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T01:11:09.781899" elapsed="0.013684"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:09.796580" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
+<arg>Gender</arg>
+<arg>M</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2024-02-04T01:11:09.795583" elapsed="0.065195"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:09.862245" level="INFO">Typing text 'David' into text field 'name:FirstName'.</msg>
+<arg>name:FirstName</arg>
+<arg>David</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:11:09.860778" elapsed="0.068286"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:09.930062" level="INFO">Typing text 'David' into text field 'name:LastName'.</msg>
+<arg>name:LastName</arg>
+<arg>David</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:11:09.929064" elapsed="0.062259"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:09.991323" level="INFO">Typing text 'abc@gmail.com' into text field 'name:Email'.</msg>
+<arg>name:Email</arg>
+<arg>abc@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:11:09.991323" elapsed="0.060135"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:10.052454" level="INFO">Typing text '1234' into text field 'name:Password'.</msg>
+<arg>name:Password</arg>
+<arg>1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:11:10.052454" elapsed="0.046875"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:10.100326" level="INFO">Typing text '1234' into text field 'name:ConfirmPassword'.</msg>
+<arg>name:ConfirmPassword</arg>
+<arg>1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:11:10.099329" elapsed="0.053119"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-04T01:11:10.152448" elapsed="2.120083"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:11:06.032651" elapsed="6.239880"/>
+</test>
+<status status="PASS" start="2024-02-04T01:11:05.877615" elapsed="6.395883"/>
+</suite>
+<status status="PASS" start="2024-02-04T01:11:05.865195" elapsed="6.410297"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="6 TimeoutTests">Suites.6 TimeoutTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

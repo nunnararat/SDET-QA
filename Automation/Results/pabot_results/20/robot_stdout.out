@@ -1,0 +1,27 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.29 RegisterTest                                                        
+==============================================================================
+Register Test                                                           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\information\SDET-QA\Automation\TestCases\29_RegisterTest.robot:18
+    T:  Register Test    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\information\SDET-QA\Automation\TestCases\29_RegisterTest.robot:28
+      Verify Successfull Register    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\information\SDET-QA\Automation\Resources\RegisterKeywords.robot:47
+      Element Should Contain    Your registration completed
+______________________________________________________________________________
+| FAIL |
+Keyword 'SeleniumLibrary.Element Should Contain' expected 2 to 4 arguments, got 1.
+------------------------------------------------------------------------------
+Suites.29 RegisterTest                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\information\SDET-QA\Automation\Results\pabot_results\20\output.xml

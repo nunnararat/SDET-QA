@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:10:38.971873" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="24 DDT2 CSV" source="C:\information\SDET-QA\Automation\TestCases\24_DDT2_CSV.robot">
+<kw name="Open my Browser" owner="login_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:39.262434" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com'.</msg>
+<arg>${login url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:10:39.261491" elapsed="3.792755"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:10:43.054246" elapsed="0.157176"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:39.261491" elapsed="3.950933"/>
+</kw>
+<test id="s1-s1-t1" name="Testing | Login with CSV using admin@yourstore.com and adm" line="14">
+<kw name="Invalid login">
+<kw name="Input username" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:43.217553" level="INFO">Typing text 'admin@yourstore.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:43.217044" elapsed="0.091831"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2024-02-04T01:10:43.216414" elapsed="0.092461"/>
+</kw>
+<kw name="Input pwd" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:43.309868" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:43.309868" elapsed="0.068202"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-02-04T01:10:43.308875" elapsed="0.069195"/>
+</kw>
+<kw name="Click login button" owner="login_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:43.379063" level="INFO">Clicking element '//button[contains(text(),'Log in')]'.</msg>
+<arg>//button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:43.379063" elapsed="0.366269"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:43.378070" elapsed="0.367262"/>
+</kw>
+<kw name="Error message should be visible" owner="login_resources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:43.773378" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-02-04T01:10:43.746323" elapsed="0.027055"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:43.745332" elapsed="0.028046"/>
+</kw>
+<arg>admin@yourstore.com</arg>
+<arg>adm</arg>
+<status status="PASS" start="2024-02-04T01:10:43.215422" elapsed="0.557956"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:43.212697" elapsed="0.560681"/>
+</test>
+<test id="s1-s1-t2" name="Testing | Login with CSV using adm@yourstore.com and admin" line="14">
+<kw name="Invalid login">
+<kw name="Input username" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:43.776370" level="INFO">Typing text 'adm@yourstore.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:43.776370" elapsed="0.058747"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2024-02-04T01:10:43.775372" elapsed="0.059745"/>
+</kw>
+<kw name="Input pwd" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:43.837110" level="INFO">Typing text 'admin' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:43.836112" elapsed="0.066219"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-02-04T01:10:43.836112" elapsed="0.066219"/>
+</kw>
+<kw name="Click login button" owner="login_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:43.904323" level="INFO">Clicking element '//button[contains(text(),'Log in')]'.</msg>
+<arg>//button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:43.903326" elapsed="0.293845"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:43.903326" elapsed="0.293845"/>
+</kw>
+<kw name="Error message should be visible" owner="login_resources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:44.216886" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-02-04T01:10:44.198170" elapsed="0.018716"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:44.198170" elapsed="0.018716"/>
+</kw>
+<arg>adm@yourstore.com</arg>
+<arg>admin</arg>
+<status status="PASS" start="2024-02-04T01:10:43.775372" elapsed="0.441514"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:43.774375" elapsed="0.443508"/>
+</test>
+<test id="s1-s1-t3" name="Testing | Login with CSV using adm123@yourstore.com and adm" line="14">
+<kw name="Invalid login">
+<kw name="Input username" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:44.219878" level="INFO">Typing text 'adm123@yourstore.com' into text field 'id:Email'.</msg>
+<arg>id:Email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:44.219878" elapsed="0.047145"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2024-02-04T01:10:44.218880" elapsed="0.048143"/>
+</kw>
+<kw name="Input pwd" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:44.268021" level="INFO">Typing text 'adm' into text field 'id:Password'.</msg>
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:44.268021" elapsed="0.043239"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-02-04T01:10:44.268021" elapsed="0.043239"/>
+</kw>
+<kw name="Click login button" owner="login_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:44.312267" level="INFO">Clicking element '//button[contains(text(),'Log in')]'.</msg>
+<arg>//button[contains(text(),'Log in')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:44.312267" elapsed="0.284017"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:44.311260" elapsed="0.285024"/>
+</kw>
+<kw name="Error message should be visible" owner="login_resources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:44.632586" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<arg>Login was unsuccessful</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-02-04T01:10:44.597280" elapsed="0.035306"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:44.596284" elapsed="0.036302"/>
+</kw>
+<arg>adm123@yourstore.com</arg>
+<arg>adm</arg>
+<status status="PASS" start="2024-02-04T01:10:44.218880" elapsed="0.413706"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:44.217883" elapsed="0.415653"/>
+</test>
+<kw name="Close Browsers" owner="login_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-02-04T01:10:44.633536" elapsed="6.208841"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:44.633536" elapsed="6.208841"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:39.005484" elapsed="11.836893"/>
+</suite>
+<status status="PASS" start="2024-02-04T01:10:38.983687" elapsed="11.859623"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="24 DDT2 CSV">Suites.24 DDT2 CSV</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

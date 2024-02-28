@@ -1,0 +1,34 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.26 Setup TearDown                                                      
+==============================================================================
+Opening Browser
+TC1 Prepaid Recharge                                                  Login to application
+This is prepaid recharge testcase
+Logout from application
+| PASS |
+------------------------------------------------------------------------------
+TC2 Postpaid Recharge                                                 Login to application
+This is postpaid recharge testcase
+Logout from application
+| PASS |
+------------------------------------------------------------------------------
+TC3 Search                                                            Login to application
+This is search testcase
+Logout from application
+| PASS |
+------------------------------------------------------------------------------
+TC4 Advance Search                                                    Login to application
+This is advance search testcase
+Logout from application
+| PASS |
+------------------------------------------------------------------------------
+Closing Browser
+Suites.26 Setup TearDown                                              | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Output:  C:\information\SDET-QA\Automation\Results\pabot_results\17\output.xml

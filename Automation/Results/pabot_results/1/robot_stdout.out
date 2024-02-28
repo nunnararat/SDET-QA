@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.10 Frames                                                              
+==============================================================================
+Testing | Frames                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\information\SDET-QA\Automation\TestCases\10_Frames.robot:11
+    T:  Testing | Frames    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\information\SDET-QA\Automation\TestCases\10_Frames.robot:16
+      Select Frame    packageListFrame
+______________________________________________________________________________
+| FAIL |
+Element with locator 'packageListFrame' not found.
+------------------------------------------------------------------------------
+Suites.10 Frames                                                      | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\information\SDET-QA\Automation\Results\pabot_results\1\output.xml

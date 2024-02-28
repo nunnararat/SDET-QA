@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:10:01.575407" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="20 GetAllLinks" source="C:\information\SDET-QA\Automation\TestCases\20_GetAllLinks.robot">
+<test id="s1-s1-t1" name="Testing | Get All Link" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:01.773644" level="INFO">Opening browser 'chrome' to base url 'https://www.countries-ofthe-world.com/flags-of-the-world.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:10:01.772647" elapsed="2.172023"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:10:03.945666" elapsed="0.108935"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.074528" level="INFO">${AllLinksCount} = 36</msg>
+<var>${AllLinksCount}</var>
+<arg>//a</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.054601" elapsed="0.019927"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${AllLinksCount}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.075524" elapsed="0.000000"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-02-04T01:10:04.075524" level="INFO">@{LinkItems} = [ ]</msg>
+<var>@{LinkItems}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.075524" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.104889" level="INFO">${linkText} = </msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.077519" elapsed="0.027370"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.105885" elapsed="0.000000"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-02-04T01:10:04.076520" elapsed="0.029365"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.130938" level="INFO">${linkText} = 7 Continents</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.106882" elapsed="0.024056"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.131934" elapsed="0.000000"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2024-02-04T01:10:04.105885" elapsed="0.026049"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.158340" level="INFO">${linkText} = World Capitals</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.132933" elapsed="0.026407"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.159340" elapsed="0.000000"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2024-02-04T01:10:04.131934" elapsed="0.028401"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.179356" level="INFO">${linkText} = World Currencies</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.160335" elapsed="0.020014"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.180349" elapsed="0.001004"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2024-02-04T01:10:04.160335" elapsed="0.021018"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.222667" level="INFO">${linkText} = Time Zones</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.181353" elapsed="0.041314"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.222667" elapsed="0.000513"/>
+</kw>
+<var name="${i}">5</var>
+<status status="PASS" start="2024-02-04T01:10:04.181353" elapsed="0.042342"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.244646" level="INFO">${linkText} = Calling Codes</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.223695" elapsed="0.020951"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.245643" elapsed="0.000000"/>
+</kw>
+<var name="${i}">6</var>
+<status status="PASS" start="2024-02-04T01:10:04.223695" elapsed="0.021948"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.262598" level="INFO">${linkText} = Country Domains</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.246640" elapsed="0.016885"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.263532" elapsed="0.000000"/>
+</kw>
+<var name="${i}">7</var>
+<status status="PASS" start="2024-02-04T01:10:04.245643" elapsed="0.018882"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.283672" level="INFO">${linkText} = Best Travel Places</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.264525" elapsed="0.019147"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.283672" elapsed="0.000843"/>
+</kw>
+<var name="${i}">8</var>
+<status status="PASS" start="2024-02-04T01:10:04.264525" elapsed="0.019990"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.305776" level="INFO">${linkText} = EUROPE</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.284515" elapsed="0.021261"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.305776" elapsed="0.000990"/>
+</kw>
+<var name="${i}">9</var>
+<status status="PASS" start="2024-02-04T01:10:04.284515" elapsed="0.022251"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.324924" level="INFO">${linkText} = ASIA</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.307774" elapsed="0.017150"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.324924" elapsed="0.000000"/>
+</kw>
+<var name="${i}">10</var>
+<status status="PASS" start="2024-02-04T01:10:04.306766" elapsed="0.018158"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.341879" level="INFO">${linkText} = AFRICA</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.325921" elapsed="0.015958"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.341879" elapsed="0.000997"/>
+</kw>
+<var name="${i}">11</var>
+<status status="PASS" start="2024-02-04T01:10:04.325921" elapsed="0.016955"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.356563" level="INFO">${linkText} = NORTH AMERICA</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.342876" elapsed="0.013687"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.356563" elapsed="0.000996"/>
+</kw>
+<var name="${i}">12</var>
+<status status="PASS" start="2024-02-04T01:10:04.342876" elapsed="0.014683"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.370524" level="INFO">${linkText} = SOUTH AMERICA</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.357559" elapsed="0.012965"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.370524" elapsed="0.000000"/>
+</kw>
+<var name="${i}">13</var>
+<status status="PASS" start="2024-02-04T01:10:04.357559" elapsed="0.012965"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.384552" level="INFO">${linkText} = AUSTRALIA AND OCEANIA</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.371521" elapsed="0.013031"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.384552" elapsed="0.000000"/>
+</kw>
+<var name="${i}">14</var>
+<status status="PASS" start="2024-02-04T01:10:04.370524" elapsed="0.014028"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.402503" level="INFO">${linkText} = Top 100 largest countries by area</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.385550" elapsed="0.016953"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.403242" elapsed="0.000000"/>
+</kw>
+<var name="${i}">15</var>
+<status status="PASS" start="2024-02-04T01:10:04.384552" elapsed="0.018690"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.448206" level="INFO">${linkText} = Top 100 smallest countries by area</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.404317" elapsed="0.043889"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.449203" elapsed="0.000000"/>
+</kw>
+<var name="${i}">16</var>
+<status status="PASS" start="2024-02-04T01:10:04.404317" elapsed="0.044886"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.478120" level="INFO">${linkText} = HOW MANY COUNTRIES?</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.449203" elapsed="0.028917"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.478120" elapsed="0.000997"/>
+</kw>
+<var name="${i}">17</var>
+<status status="PASS" start="2024-02-04T01:10:04.449203" elapsed="0.029914"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.505724" level="INFO">${linkText} = COUNTRIES OF THE WORLD</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.479117" elapsed="0.026607"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.506656" elapsed="0.000000"/>
+</kw>
+<var name="${i}">18</var>
+<status status="PASS" start="2024-02-04T01:10:04.479117" elapsed="0.027539"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.526314" level="INFO">${linkText} = COUNTRIES OF EUROPE</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.507655" elapsed="0.018659"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.526314" elapsed="0.000000"/>
+</kw>
+<var name="${i}">19</var>
+<status status="PASS" start="2024-02-04T01:10:04.507655" elapsed="0.019656"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.544652" level="INFO">${linkText} = COUNTRIES OF ASIA</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.527311" elapsed="0.017341"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.545648" elapsed="0.000000"/>
+</kw>
+<var name="${i}">20</var>
+<status status="PASS" start="2024-02-04T01:10:04.527311" elapsed="0.018337"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.562602" level="INFO">${linkText} = COUNTRIES OF AFRICA</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.545648" elapsed="0.016954"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.562602" elapsed="0.000000"/>
+</kw>
+<var name="${i}">21</var>
+<status status="PASS" start="2024-02-04T01:10:04.545648" elapsed="0.016954"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.578133" level="INFO">${linkText} = COUNTRIES OF NORTH AMERICA</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.563600" elapsed="0.014533"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.579130" elapsed="0.000000"/>
+</kw>
+<var name="${i}">22</var>
+<status status="PASS" start="2024-02-04T01:10:04.562602" elapsed="0.016528"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.591241" level="INFO">${linkText} = COUNTRIES OF SOUTH AMERICA</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.579130" elapsed="0.012111"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.591241" elapsed="0.000998"/>
+</kw>
+<var name="${i}">23</var>
+<status status="PASS" start="2024-02-04T01:10:04.579130" elapsed="0.013109"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.603772" level="INFO">${linkText} = COUNTRIES OF AUSTRALIA AND OCEANIA</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.592239" elapsed="0.011533"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.604770" elapsed="0.000000"/>
+</kw>
+<var name="${i}">24</var>
+<status status="PASS" start="2024-02-04T01:10:04.592239" elapsed="0.012531"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.616508" level="INFO">${linkText} = EUROPEAN UNION COUNTRIES</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.604770" elapsed="0.011738"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.616508" elapsed="0.000000"/>
+</kw>
+<var name="${i}">25</var>
+<status status="PASS" start="2024-02-04T01:10:04.604770" elapsed="0.011738"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.628477" level="INFO">${linkText} = WORLD'S LARGEST COUNTRIES</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.617505" elapsed="0.010972"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.628477" elapsed="0.000000"/>
+</kw>
+<var name="${i}">26</var>
+<status status="PASS" start="2024-02-04T01:10:04.617505" elapsed="0.011969"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.639796" level="INFO">${linkText} = WORLD'S SMALLEST COUNTRIES</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.629474" elapsed="0.010322"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.639796" elapsed="0.000998"/>
+</kw>
+<var name="${i}">27</var>
+<status status="PASS" start="2024-02-04T01:10:04.629474" elapsed="0.011320"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.651765" level="INFO">${linkText} = MOST POPULOUS COUNTRIES</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.640794" elapsed="0.010971"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.651765" elapsed="0.000000"/>
+</kw>
+<var name="${i}">28</var>
+<status status="PASS" start="2024-02-04T01:10:04.640794" elapsed="0.010971"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.663718" level="INFO">${linkText} = WORLD'S RICHEST COUNTRIES</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.651765" elapsed="0.011953"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.663718" elapsed="0.000000"/>
+</kw>
+<var name="${i}">29</var>
+<status status="PASS" start="2024-02-04T01:10:04.651765" elapsed="0.011953"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.675681" level="INFO">${linkText} = MOST TRADED CURRENCIES</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.664573" elapsed="0.011108"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.675681" elapsed="0.000998"/>
+</kw>
+<var name="${i}">30</var>
+<status status="PASS" start="2024-02-04T01:10:04.663718" elapsed="0.012961"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.687649" level="INFO">${linkText} = WORLD'S TOP UNIVERSITIES</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.676679" elapsed="0.010970"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.687649" elapsed="0.000000"/>
+</kw>
+<var name="${i}">31</var>
+<status status="PASS" start="2024-02-04T01:10:04.676679" elapsed="0.010970"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.699617" level="INFO">${linkText} = BEST US ONLINE COLLEGES</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.687649" elapsed="0.011968"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.699617" elapsed="0.000000"/>
+</kw>
+<var name="${i}">32</var>
+<status status="PASS" start="2024-02-04T01:10:04.687649" elapsed="0.011968"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.711585" level="INFO">${linkText} = FREE ONLINE COURSES</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.700615" elapsed="0.010970"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.711585" elapsed="0.000998"/>
+</kw>
+<var name="${i}">33</var>
+<status status="PASS" start="2024-02-04T01:10:04.699617" elapsed="0.012966"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.723904" level="INFO">${linkText} = Privacy and Disclaimer</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.712583" elapsed="0.011321"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.723904" elapsed="0.000000"/>
+</kw>
+<var name="${i}">34</var>
+<status status="PASS" start="2024-02-04T01:10:04.712583" elapsed="0.011321"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.734870" level="INFO">${linkText} = Cookies Policy</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.724896" elapsed="0.009974"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.734870" elapsed="0.000000"/>
+</kw>
+<var name="${i}">35</var>
+<status status="PASS" start="2024-02-04T01:10:04.724735" elapsed="0.011132"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:04.746770" level="INFO">${linkText} = Contact us</msg>
+<var>${linkText}</var>
+<arg>(//a)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.735867" elapsed="0.010903"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i} : ${linkText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.746770" elapsed="0.000000"/>
+</kw>
+<var name="${i}">36</var>
+<status status="PASS" start="2024-02-04T01:10:04.735867" elapsed="0.010903"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>${AllLinksCount}+1</value>
+<status status="PASS" start="2024-02-04T01:10:04.076520" elapsed="0.670250"/>
+</for>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-04T01:10:04.746770" elapsed="2.128890"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:01.771651" elapsed="5.105009"/>
+</test>
+<status status="PASS" start="2024-02-04T01:10:01.600069" elapsed="5.276591"/>
+</suite>
+<status status="PASS" start="2024-02-04T01:10:01.586101" elapsed="5.290559"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="20 GetAllLinks">Suites.20 GetAllLinks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

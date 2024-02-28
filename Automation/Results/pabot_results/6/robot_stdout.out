@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.15 MouseOperations                                                     
+==============================================================================
+Testing | MouseActions => Right click / open context menu | Double...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\information\SDET-QA\Automation\TestCases\15_MouseOperations.robot:12
+    T:  Testing | MouseActions => Right click / open context menu | Double click action | Drag and Drop    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\information\SDET-QA\Automation\TestCases\15_MouseOperations.robot:28
+      Drag And Drop    id:box6    id:box106
+______________________________________________________________________________
+| FAIL |
+Element with locator 'id:box6' not found.
+------------------------------------------------------------------------------
+Suites.15 MouseOperations                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\information\SDET-QA\Automation\Results\pabot_results\6\output.xml

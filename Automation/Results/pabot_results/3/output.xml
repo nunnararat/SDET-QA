@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:09:09.965393" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="12 SwitchToMultipleBrowsers" source="C:\information\SDET-QA\Automation\TestCases\12_SwitchToMultipleBrowsers.robot">
+<test id="s1-s1-t1" name="Testing | Multiple Browsers" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:10.146994" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:09:10.146994" elapsed="2.695483"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:09:12.842477" elapsed="0.127982"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-04T01:09:14.971792" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-04T01:09:12.971458" elapsed="2.000334"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:14.971792" level="INFO">Opening browser 'chrome' to base url 'https://www.bing.com/'.</msg>
+<arg>${url2}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:09:14.971792" elapsed="2.103472"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:09:17.076263" elapsed="0.108535"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2024-02-04T01:09:17.185791" elapsed="0.000000"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:17.189781" level="INFO">${title} = Google</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-02-04T01:09:17.185791" elapsed="0.003990"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:09:17.189781" elapsed="0.000997"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2024-02-04T01:09:17.190778" elapsed="0.000000"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:17.195716" level="INFO">${title} = Bing</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-02-04T01:09:17.190778" elapsed="0.004938"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:09:17.195716" elapsed="0.000000"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-02-04T01:09:17.195716" elapsed="12.475703"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:09:10.145997" elapsed="19.525422"/>
+</test>
+<status status="PASS" start="2024-02-04T01:09:09.988317" elapsed="19.684110"/>
+</suite>
+<status status="PASS" start="2024-02-04T01:09:09.975972" elapsed="19.699609"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="12 SwitchToMultipleBrowsers">Suites.12 SwitchToMultipleBrowsers</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

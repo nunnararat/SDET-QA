@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:10:42.684804" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="27 Tagging" source="C:\information\SDET-QA\Automation\TestCases\27_Tagging.robot">
+<test id="s1-s1-t1" name="TC1 User Registration Test" line="7">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is user reg test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.711249" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>user regostration test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.711249" elapsed="0.000000"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" start="2024-02-04T01:10:42.710252" elapsed="0.000997"/>
+</test>
+<test id="s1-s1-t2" name="TC2 Login Test" line="12">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is login test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.712246" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>login test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.712246" elapsed="0.000855"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" start="2024-02-04T01:10:42.712246" elapsed="0.000998"/>
+</test>
+<test id="s1-s1-t3" name="TC3 Change user settings" line="17">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is changin user settings test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.713244" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Change user settings test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.713244" elapsed="0.000000"/>
+</kw>
+<tag>regresssion</tag>
+<status status="PASS" start="2024-02-04T01:10:42.713244" elapsed="0.000000"/>
+</test>
+<test id="s1-s1-t4" name="TC4 Logout Test" line="22">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is logout test</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.714241" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>logout test is over</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.714241" elapsed="0.000000"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" start="2024-02-04T01:10:42.714241" elapsed="0.000000"/>
+</test>
+<status status="PASS" start="2024-02-04T01:10:42.708257" elapsed="0.005984"/>
+</suite>
+<status status="PASS" start="2024-02-04T01:10:42.696290" elapsed="0.018949"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">regresssion</stat>
+<stat pass="3" fail="0" skip="0">sanity</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="27 Tagging">Suites.27 Tagging</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

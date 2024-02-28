@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:11:47.597471" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="9 Alerts" source="C:\information\SDET-QA\Automation\TestCases\9_Alerts.robot">
+<test id="s1-s1-t1" name="Testing | Alerts" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:47.779216" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:11:47.778219" elapsed="5.538311"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:11:53.316530" elapsed="0.107793"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:53.425318" level="INFO">Clicking element '//button[contains(text(),'Alert')]'.</msg>
+<arg>//button[contains(text(),'Alert')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:11:53.425318" elapsed="0.038623"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-04T01:11:56.465465" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-04T01:11:53.464937" elapsed="3.000528"/>
+</kw>
+<kw name="Alert Should Be Present" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:56.465465" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>I am an alert box!</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2024-02-04T01:11:56.465465" elapsed="0.004522"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-04T01:11:56.469987" elapsed="2.127681"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:11:47.778219" elapsed="10.819449"/>
+</test>
+<status status="PASS" start="2024-02-04T01:11:47.620410" elapsed="10.977258"/>
+</suite>
+<status status="PASS" start="2024-02-04T01:11:47.607444" elapsed="10.993231"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="9 Alerts">Suites.9 Alerts</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

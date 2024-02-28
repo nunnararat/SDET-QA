@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:10:51.415051" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="29 RegisterTest" source="C:\information\SDET-QA\Automation\TestCases\29_RegisterTest.robot">
+<test id="s1-s1-t1" name="Register Test" line="18">
+<kw name="Open my Browser" owner="RegisterKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:51.600149" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/'.</msg>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:10:51.599152" elapsed="4.336340"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:10:55.935492" elapsed="0.119769"/>
+</kw>
+<arg>${RegUrl}</arg>
+<arg>${Browser}</arg>
+<status status="PASS" start="2024-02-04T01:10:51.599152" elapsed="4.457105"/>
+</kw>
+<kw name="Click LogIn" owner="RegisterKeywords">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:56.057253" level="INFO">Clicking link 'xpath://a[contains(text(),'Register')]'.</msg>
+<arg>${link_register}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:56.056257" elapsed="0.458539"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:56.056257" elapsed="0.458539"/>
+</kw>
+<kw name="Select Gender" owner="RegisterKeywords">
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:56.515794" level="INFO">Selecting 'F' from radio button 'Gender'.</msg>
+<arg>Gender</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2024-02-04T01:10:56.515794" elapsed="0.039461"/>
+</kw>
+<arg>${gender}</arg>
+<status status="PASS" start="2024-02-04T01:10:56.514796" elapsed="0.040459"/>
+</kw>
+<kw name="Enter FirstName" owner="RegisterKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:56.556251" level="INFO">Typing text 'nararat' into text field 'xpath://input[@id='FirstName']'.</msg>
+<arg>${txt_regFirstName}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:56.555255" elapsed="0.056388"/>
+</kw>
+<arg>${firstname}</arg>
+<status status="PASS" start="2024-02-04T01:10:56.555255" elapsed="0.056388"/>
+</kw>
+<kw name="Enter LastName" owner="RegisterKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:56.612637" level="INFO">Typing text 'tangkaew' into text field 'xpath://input[@id='LastName']'.</msg>
+<arg>${txt_regLastName}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:56.611643" elapsed="0.049813"/>
+</kw>
+<arg>${lastname}</arg>
+<status status="PASS" start="2024-02-04T01:10:56.611643" elapsed="0.049813"/>
+</kw>
+<kw name="Enter Email" owner="RegisterKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:56.662450" level="INFO">Typing text 'nunnararat3@demo.com' into text field 'xpath://input[@id='Email']'.</msg>
+<arg>${txt_regEmail}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:56.661456" elapsed="0.050992"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2024-02-04T01:10:56.661456" elapsed="0.050992"/>
+</kw>
+<kw name="Enter Password" owner="RegisterKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:56.713348" level="INFO">Typing text '123456' into text field 'xpath://input[@id='Password']'.</msg>
+<arg>${txt_regPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:56.713348" elapsed="0.053702"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-02-04T01:10:56.712448" elapsed="0.054602"/>
+</kw>
+<kw name="Enter Confirm Password" owner="RegisterKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:56.768047" level="INFO">Typing text '123456' into text field 'xpath://input[@id='ConfirmPassword']'.</msg>
+<arg>${txt_regConfirmPassword}</arg>
+<arg>${confirmpassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:56.768047" elapsed="0.051639"/>
+</kw>
+<arg>${confirmpassword}</arg>
+<status status="PASS" start="2024-02-04T01:10:56.767050" elapsed="0.052636"/>
+</kw>
+<kw name="Click Register" owner="RegisterKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:56.819686" level="INFO">Clicking button 'xpath://input[@id='register-button']'.</msg>
+<arg>${btn_reg}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:10:56.819686" elapsed="0.655602"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:56.819686" elapsed="0.655602"/>
+</kw>
+<kw name="Verify Successfull Register" owner="RegisterKeywords">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:57.476285" level="FAIL">Keyword 'SeleniumLibrary.Element Should Contain' expected 2 to 4 arguments, got 1.</msg>
+<arg>Your registration completed</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="FAIL" start="2024-02-04T01:10:57.475288" elapsed="0.000997">Keyword 'SeleniumLibrary.Element Should Contain' expected 2 to 4 arguments, got 1.</status>
+</kw>
+<status status="FAIL" start="2024-02-04T01:10:57.475288" elapsed="0.000997">Keyword 'SeleniumLibrary.Element Should Contain' expected 2 to 4 arguments, got 1.</status>
+</kw>
+<kw name="Close My Browsers" owner="RegisterKeywords">
+<status status="NOT RUN" start="2024-02-04T01:10:57.476285" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-04T01:10:51.598152" elapsed="5.878133">Keyword 'SeleniumLibrary.Element Should Contain' expected 2 to 4 arguments, got 1.</status>
+</test>
+<status status="FAIL" start="2024-02-04T01:10:51.438367" elapsed="6.038916"/>
+</suite>
+<status status="FAIL" start="2024-02-04T01:10:51.424815" elapsed="6.052468"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="29 RegisterTest">Suites.29 RegisterTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:10:42.048469" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="26 Setup TearDown" source="C:\information\SDET-QA\Automation\TestCases\26_Setup_TearDown.robot">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>Opening Browser</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.073384" elapsed="0.000000"/>
+</kw>
+<test id="s1-s1-t1" name="TC1 Prepaid Recharge" line="11">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>Login to application</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.073384" elapsed="0.001001"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is prepaid recharge testcase</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.074385" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Logout from application</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.074385" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:42.073384" elapsed="0.001001"/>
+</test>
+<test id="s1-s1-t2" name="TC2 Postpaid Recharge" line="14">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>Login to application</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.077411" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is postpaid recharge testcase</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.077411" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Logout from application</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.077411" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:42.076381" elapsed="0.001030"/>
+</test>
+<test id="s1-s1-t3" name="TC3 Search" line="17">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>Login to application</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.078371" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is search testcase</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.078371" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Logout from application</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.078371" elapsed="0.000998"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:42.078371" elapsed="0.000998"/>
+</test>
+<test id="s1-s1-t4" name="TC4 Advance Search" line="20">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>Login to application</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.079369" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This is advance search testcase</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.079369" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Logout from application</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.080365" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:42.079369" elapsed="0.000996"/>
+</test>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Closing Browser</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:10:42.080365" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:10:42.071386" elapsed="0.008979"/>
+</suite>
+<status status="PASS" start="2024-02-04T01:10:42.059909" elapsed="0.021467"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="26 Setup TearDown">Suites.26 Setup TearDown</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

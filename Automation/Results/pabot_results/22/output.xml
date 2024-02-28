@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:11:00.135927" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="4 Dropdowns" source="C:\information\SDET-QA\Automation\TestCases\4_Dropdowns.robot">
+<test id="s1-s1-t1" name="Testing | Handling Dropdowns and list" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:00.313752" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:11:00.312758" elapsed="2.458762"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:11:02.771520" elapsed="0.119690"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:02.891210" level="INFO">Selecting options from selection list 'continents' by label Australia.</msg>
+<msg time="2024-02-04T01:11:03.235724" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-04T01:11:03.235724" level="FAIL">List with locator 'continents' not found.</msg>
+<arg>continents</arg>
+<arg>Australia</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="FAIL" start="2024-02-04T01:11:02.891210" elapsed="0.355152">List with locator 'continents' not found.</status>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<arg>continents</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" start="2024-02-04T01:11:03.246362" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<arg>selenium_commands</arg>
+<arg>0</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" start="2024-02-04T01:11:03.246362" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>selenium_commands</arg>
+<arg>Switch Commands</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-02-04T01:11:03.246362" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-02-04T01:11:03.246362" elapsed="0.000000"/>
+</kw>
+<kw name="Unselect From List By Label" owner="SeleniumLibrary">
+<arg>selenium_commands</arg>
+<arg>Switch Commands</arg>
+<doc>Unselects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-02-04T01:11:03.246362" elapsed="0.000998"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-02-04T01:11:03.247360" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-04T01:11:00.311915" elapsed="2.935445">List with locator 'continents' not found.</status>
+</test>
+<status status="FAIL" start="2024-02-04T01:11:00.160513" elapsed="3.086847"/>
+</suite>
+<status status="FAIL" start="2024-02-04T01:11:00.147546" elapsed="3.100809"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="4 Dropdowns">Suites.4 Dropdowns</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:10:54.277049" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="3 Radiobuttons" source="C:\information\SDET-QA\Automation\TestCases\3_Radiobuttons.robot">
+<test id="s1-s1-t1" name="Testing | Radio Buttons and Check Boxes" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:54.450876" level="INFO">Opening browser 'chrome' to base url 'https://www.tutorialspoint.com/selenium/selenium_automation_practice.htm'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:10:54.449880" elapsed="2.649811"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:10:57.099691" elapsed="0.116529"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:10:57.217215" level="INFO">Selecting 'Female' from radio button 'sex'.</msg>
+<msg time="2024-02-04T01:10:57.512277" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-04T01:10:57.512277" level="FAIL">No radio button with name 'sex' and value 'Female' found.</msg>
+<arg>sex</arg>
+<arg>Female</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="FAIL" start="2024-02-04T01:10:57.216220" elapsed="0.305677">No radio button with name 'sex' and value 'Female' found.</status>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<arg>exp</arg>
+<arg>5</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="NOT RUN" start="2024-02-04T01:10:57.521897" elapsed="0.000000"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>Manual Tester</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-04T01:10:57.521897" elapsed="0.000000"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>Automation Tester</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-04T01:10:57.522716" elapsed="0.000000"/>
+</kw>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<arg>Manual Tester</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-04T01:10:57.522716" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-02-04T01:10:57.522716" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-04T01:10:54.448881" elapsed="3.073835">No radio button with name 'sex' and value 'Female' found.</status>
+</test>
+<status status="FAIL" start="2024-02-04T01:10:54.299995" elapsed="3.223717"/>
+</suite>
+<status status="FAIL" start="2024-02-04T01:10:54.288024" elapsed="3.235688"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="3 Radiobuttons">Suites.3 Radiobuttons</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:11:16.899285" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="7 ImplicitWaitTests" source="C:\information\SDET-QA\Automation\TestCases\7_ImplicitWaitTests.robot">
+<test id="s1-s1-t1" name="Testing | implicit wait" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:17.065205" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/register'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:11:17.065205" elapsed="3.631142"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:11:20.696347" elapsed="0.119884"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-02-04T01:11:20.816231" elapsed="0.000998"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:20.818226" level="INFO">${implicittime} = 10 seconds</msg>
+<var>${implicittime}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-02-04T01:11:20.817229" elapsed="0.000997"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${implicittime}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-04T01:11:20.818226" elapsed="0.000000"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:20.818226" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
+<arg>Gender</arg>
+<arg>M</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2024-02-04T01:11:20.818226" elapsed="0.055209"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:20.874432" level="INFO">Typing text 'David' into text field 'name:FirstName'.</msg>
+<arg>name:FirstName</arg>
+<arg>David</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:11:20.873435" elapsed="0.060376"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:20.934809" level="INFO">Typing text 'David' into text field 'name:LastName'.</msg>
+<arg>name:LastName</arg>
+<arg>David</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:11:20.934809" elapsed="0.047359"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:20.982168" level="INFO">Typing text 'abc@gmail.com' into text field 'name:Email'.</msg>
+<arg>name:Email</arg>
+<arg>abc@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:11:20.982168" elapsed="0.048451"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:21.030619" level="INFO">Typing text '1234' into text field 'name:Password'.</msg>
+<arg>name:Password</arg>
+<arg>1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:11:21.030619" elapsed="0.043962"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:11:21.075579" level="INFO">Typing text '1234' into text field 'name:ConfirmPassword'.</msg>
+<arg>name:ConfirmPassword</arg>
+<arg>1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:11:21.074581" elapsed="0.050403"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-04T01:11:21.124984" elapsed="2.126553"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:11:17.064208" elapsed="6.187329"/>
+</test>
+<status status="PASS" start="2024-02-04T01:11:16.922954" elapsed="6.329421"/>
+</suite>
+<status status="PASS" start="2024-02-04T01:11:16.909332" elapsed="6.346084"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="7 ImplicitWaitTests">Suites.7 ImplicitWaitTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

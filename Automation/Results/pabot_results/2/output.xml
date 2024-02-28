@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:09:05.286474" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="11 TabbedWindows" source="C:\information\SDET-QA\Automation\TestCases\11_TabbedWindows.robot">
+<test id="s1-s1-t1" name="Testing | switch window" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:05.450986" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Windows.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:09:05.450986" elapsed="2.848822"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:09:08.299808" elapsed="0.126999"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:08.427805" level="INFO">Clicking element '//*[@id="Tabbed"]/a/button'.</msg>
+<arg>//*[@id="Tabbed"]/a/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:09:08.426807" elapsed="0.081892"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>title=Selenium</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:09:08.509694" elapsed="2.009180"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:10.518874" level="INFO">Clicking element '//*[@id="announcement-banner"]/div/div/div/h4/a'.</msg>
+<arg>//*[@id="announcement-banner"]/div/div/div/h4/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:09:10.518874" elapsed="0.049622"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-04T01:09:13.570878" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-04T01:09:10.569500" elapsed="3.001378"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-02-04T01:09:13.570878" elapsed="6.209348"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:09:05.450024" elapsed="14.330202"/>
+</test>
+<status status="PASS" start="2024-02-04T01:09:05.310019" elapsed="14.470207"/>
+</suite>
+<status status="PASS" start="2024-02-04T01:09:05.297042" elapsed="14.485956"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="11 TabbedWindows">Suites.11 TabbedWindows</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

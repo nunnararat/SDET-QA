@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.4 Dropdowns                                                            
+==============================================================================
+Testing | Handling Dropdowns and list                                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\information\SDET-QA\Automation\TestCases\4_Dropdowns.robot:10
+    T:  Testing | Handling Dropdowns and list    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\information\SDET-QA\Automation\TestCases\4_Dropdowns.robot:14
+      Select From List By Label    continents    Australia
+______________________________________________________________________________
+| FAIL |
+List with locator 'continents' not found.
+------------------------------------------------------------------------------
+Suites.4 Dropdowns                                                    | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\information\SDET-QA\Automation\Results\pabot_results\22\output.xml

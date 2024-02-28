@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T01:09:30.227751" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="14 CaptureScreen" source="C:\information\SDET-QA\Automation\TestCases\14_CaptureScreen.robot">
+<test id="s1-s1-t1" name="Testing | Capture Screen" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:30.399032" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T01:09:30.398031" elapsed="2.426497"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-04T01:09:32.824528" elapsed="0.127274"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:32.952811" level="INFO">Typing text 'Robot Framework' into text field '//textarea[@id='APjFqb']'.</msg>
+<arg>//textarea[@id='APjFqb']</arg>
+<arg>Robot Framework</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T01:09:32.951802" elapsed="0.104671"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:33.276513" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/logo.png"&gt;&lt;img src="../Screenshots/logo.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>//body/div[1]/div[2]/div[1]/img[1]</arg>
+<arg>../Screenshots/logo.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-02-04T01:09:33.057469" elapsed="0.220044"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-02-04T01:09:33.530532" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/search.png"&gt;&lt;img src="../Screenshots/search.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>../Screenshots/search.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-02-04T01:09:33.277513" elapsed="0.253019"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-04T01:09:33.530532" elapsed="2.119878"/>
+</kw>
+<status status="PASS" start="2024-02-04T01:09:30.398031" elapsed="5.253387"/>
+</test>
+<status status="PASS" start="2024-02-04T01:09:30.248602" elapsed="5.404835"/>
+</suite>
+<status status="PASS" start="2024-02-04T01:09:30.237725" elapsed="5.417860"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="14 CaptureScreen">Suites.14 CaptureScreen</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

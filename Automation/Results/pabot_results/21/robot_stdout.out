@@ -1,0 +1,24 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.3 Radiobuttons                                                         
+==============================================================================
+Testing | Radio Buttons and Check Boxes                                 
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\information\SDET-QA\Automation\TestCases\3_Radiobuttons.robot:10
+    T:  Testing | Radio Buttons and Check Boxes    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\information\SDET-QA\Automation\TestCases\3_Radiobuttons.robot:15
+      Select Radio Button    sex    Female
+______________________________________________________________________________
+| FAIL |
+No radio button with name 'sex' and value 'Female' found.
+------------------------------------------------------------------------------
+Suites.3 Radiobuttons                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\information\SDET-QA\Automation\Results\pabot_results\21\output.xml
